@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1d1e25;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-left: 2rem;
+}
+
+.logo img {
+  width: 150px;
+  height: 150px;
+}
+
+li {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 8em;
+}
+
+.navBar li:not(:last-child) {
+  margin-right: 5rem;
+}
