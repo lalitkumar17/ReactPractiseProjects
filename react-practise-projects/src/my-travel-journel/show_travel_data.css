@@ -1,0 +1,13 @@
+.header__container {
+  width: 100%;
+  background-color: #f55a5a;
+  color: white;
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__container > p {
+  margin-left: 0.5em;
+}

@@ -5,27 +5,34 @@ import "./App.css";
 // import cat4 from "./images/cat-four.jfif";
 // import cat5 from "./images/cat-five.jfif";
 // import CatContacts from "./props_example/CatContacts";
-import ShowData from "./render_objects_in_component/ShowData";
-import Data from "./render_objects_in_component/Data";
+import ShowTravelData from "./my-travel-journel/ShowTravelData";
+import TravelData from "./my-travel-journel/TravelData";
+// import ShowData from "./render_objects_in_component/ShowData";
+// import Data from "./render_objects_in_component/Data";
 
 function App() {
-  const obj = Data.map((data) => {
-    return (
-      //bad practise
-      // <ShowData
-      //   name={data.name}
-      //   clas={data.clas}
-      //   age={data.age}
-      //   roll={data.roll_no}
-      // />
-
-      //good practise
-      <ShowData all_data={data} />
-    );
+  const journal_obj = TravelData.map((journal_data) => {
+    return <ShowTravelData journal_data_obj={journal_data} />;
   });
+
+  // const obj = Data.map((data) => {
+  //   return (
+  //     //bad practise
+  //     // <ShowData
+  //     //   name={data.name}
+  //     //   clas={data.clas}
+  //     //   age={data.age}
+  //     //   roll={data.roll_no}
+  //     // />
+
+  //     //good practise
+  //     <ShowData all_data={data} />
+  //   );
+  // });
   return (
     <div className="app">
-      {obj}
+      {journal_obj}
+      {/* {obj} */}
       {/* <CatContacts
         image={cat1}
         name="Mrs. Virender"
