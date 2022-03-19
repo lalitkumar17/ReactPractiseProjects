@@ -10,12 +10,3 @@
   align-items: center;
   justify-content: center;
 } */
-
-.app {
-  display: flex;
-  padding: 2rem;
-  justify-content: left;
-  gap: 1rem;
-  flex-wrap: wrap;
-  align-items: flex-start;
-}

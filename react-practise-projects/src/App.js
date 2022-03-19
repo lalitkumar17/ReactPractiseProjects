@@ -7,6 +7,7 @@ import "./App.css";
 // import CatContacts from "./props_example/CatContacts";
 import ShowTravelData from "./my-travel-journel/ShowTravelData";
 import TravelData from "./my-travel-journel/TravelData";
+import Header from "./my-travel-journel/Header";
 // import ShowData from "./render_objects_in_component/ShowData";
 // import Data from "./render_objects_in_component/Data";
 
@@ -31,6 +32,7 @@ function App() {
   // });
   return (
     <div className="app">
+      <Header />
       {journal_obj}
       {/* {obj} */}
       {/* <CatContacts
