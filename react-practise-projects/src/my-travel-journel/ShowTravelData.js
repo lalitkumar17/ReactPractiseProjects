@@ -2,7 +2,7 @@ import React from "react";
 import "./show_travel_data.css";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 
-function ShowTravelData(props) {
+function ShowTravelData({ journal_data_obj }) {
   return (
     <div>
       <main className="journal">
@@ -15,15 +15,15 @@ function ShowTravelData(props) {
             <div className="location-icon">
               <LocationOnIcon style={{ fontSize: 12 }} />
             </div>
-            <p className="journal__country">{props.journal_data_obj.country}</p>
+            <p className="journal__country">{journal_data_obj.country}</p>
 
             <a href="#">view on google map</a>
           </div>
-          <h1>{props.journal_data_obj.place_name}</h1>
+          <h1>{journal_data_obj.place_name}</h1>
           <p>
-            <strong>{props.journal_data_obj.date} </strong>
+            <strong>{journal_data_obj.date} </strong>
           </p>
-          <p>{props.journal_data_obj.description}</p>
+          <p>{journal_data_obj.description}</p>
         </div>
       </main>
     </div>
